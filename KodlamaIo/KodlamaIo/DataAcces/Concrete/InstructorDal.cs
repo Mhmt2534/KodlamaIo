@@ -18,12 +18,12 @@ public class InstructorDal : IInstructorDal
         instructor1.InstructorName = "Tümü";
 
         Instructor instructor2 = new Instructor();
-        instructor1.InstructorId = 2;
-        instructor1.InstructorName = "Engin DemirOg";
+        instructor2.InstructorId = 2;
+        instructor2.InstructorName = "Engin DemirOg";
 
         Instructor instructor3 = new Instructor();
-        instructor1.InstructorId = 3;
-        instructor1.InstructorName = "Halit Enes Kalaycı";
+        instructor3.InstructorId = 3;
+        instructor3.InstructorName = "Halit Enes Kalaycı";
 
 
         listInstructors = new List<Instructor>() { instructor1,instructor2,instructor3};
@@ -31,9 +31,9 @@ public class InstructorDal : IInstructorDal
     }
 
 
-    public void Add()
+    public void Add(Instructor instructor)
     {
-        Console.WriteLine("Eğitmen Eklendi");
+        listInstructors.Add(instructor);
     }
 
     public void Delete()

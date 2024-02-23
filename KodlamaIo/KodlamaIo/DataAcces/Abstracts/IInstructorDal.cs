@@ -10,7 +10,7 @@ namespace KodlamaIo.DataAcces.Abstracts;
 public interface IInstructorDal
 {
     public List<Instructor> GetAllInstructor();
-    public void Add();
+    public void Add(Instructor instructor);
     public void Delete();
     public void Update();
 }

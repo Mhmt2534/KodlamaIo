@@ -17,9 +17,9 @@ public class CourseManager : ICourseManager
         _courseDal = courseDal;
     }
 
-    public void Add()
+    public void Add(Courses courses)
     {
-        _courseDal.Add();
+        _courseDal.Add(courses);
     }
 
     public void Delete()

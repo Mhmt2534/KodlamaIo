@@ -1,4 +1,5 @@
 ﻿using KodlamaIo.Business.Abstracts;
+using KodlamaIo.DataAcces.Abstracts;
 using KodlamaIo.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,25 +11,33 @@ namespace KodlamaIo.Business.Concrete;
 
 public class CateogryManager : ICategoryManager
 {
-    public void Add()
+    private ICategoryDal _categoryDal;
+    public CateogryManager(ICategoryDal categoryDal)
     {
-        throw new NotImplementedException();
+
+        _categoryDal = categoryDal;
+
+    }
+
+    public void Add(Category category)
+    {
+        _categoryDal.Add(category);
     }
 
     public void Delete()
     {
-        throw new NotImplementedException();
+        _categoryDal.Delete();
     }
 
     public List<Category> GetAllCategory()
     {
-        throw new NotImplementedException();
+        return _categoryDal.GetAllCategory();
     }
 
     
 
     public void Update()
     {
-        throw new NotImplementedException();
+        _categoryDal.Update();
     }
 }

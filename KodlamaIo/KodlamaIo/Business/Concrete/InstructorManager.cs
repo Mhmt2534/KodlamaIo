@@ -20,9 +20,9 @@ public class InstructorManager : IInstructorManager
 
     }
 
-    public void Add()
+    public void Add(Instructor instructor)
     {
-        _instructorDal.Add();
+        _instructorDal.Add(instructor);
     }
 
     public void Delete()

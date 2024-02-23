@@ -10,7 +10,7 @@ namespace KodlamaIo.Business.Abstracts;
 public interface IInstructorManager
 {
     public List<Instructor> GetAllInstructor();
-    public void Add();
+    public void Add(Instructor instructor);
     public void Update();
     public void Delete();
 }

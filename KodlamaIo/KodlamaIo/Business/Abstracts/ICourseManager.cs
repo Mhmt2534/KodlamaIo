@@ -10,7 +10,7 @@ namespace KodlamaIo.Business.Abstracts;
 public interface ICourseManager
 {
     public List<Courses> GetAllCourses();
-    public void Add();
+    public void Add(Courses courses);
     public void Update();
     public void Delete();
 }

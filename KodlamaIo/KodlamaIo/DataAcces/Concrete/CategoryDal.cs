@@ -24,9 +24,9 @@ public class CategoryDal : ICategoryDal
         listCategories= new List<Category> {category1,category2};
     }
 
-    public void Add()
+    public void Add(Category category)
     {
-        Console.WriteLine("Kategori Eklendi");
+        listCategories.Add(category);
     }
 
     public void Delete()

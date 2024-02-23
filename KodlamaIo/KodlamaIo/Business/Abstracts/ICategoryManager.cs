@@ -10,7 +10,7 @@ namespace KodlamaIo.Business.Abstracts;
 public interface ICategoryManager
 {
     public List<Category> GetAllCategory();
-    public void Add();
+    public void Add(Category category);
     public void Update();
     public void Delete();
 }

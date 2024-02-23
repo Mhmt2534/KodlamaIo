@@ -41,9 +41,9 @@ public class CourseDal : ICourseDal
         listCourses= new List<Courses>() {course1,course2,course3 };
     }
 
-    public void Add()
+    public void Add(Courses courses)
     {
-        Console.WriteLine("Kurs Eklendi");
+        listCourses.Add(courses);
     }
 
     public void Delete()

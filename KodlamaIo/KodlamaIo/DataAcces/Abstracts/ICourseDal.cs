@@ -9,7 +9,7 @@ namespace KodlamaIo.DataAcces.Abstracts;
 
 public interface ICourseDal
 {
-    public void Add();
+    public void Add(Courses courses);
     public void Delete();
     List<Courses> GetAllCourses();
     public void Update();
